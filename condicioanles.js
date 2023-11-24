@@ -84,7 +84,7 @@ if (mayorMenor>-10 && mayorMenor<10){
 }
 else{
     console.log("numero fuera de rango");
-}*/
+}
 //12. Determina si un número es un año bisiesto.
 
 let bisiesto=Number.parseInt(prompt("ingrese el año que quiere comprobar si es bisiesto"));
@@ -94,3 +94,28 @@ if (bisiesto%4 ==0 || (bisiesto %4==0 && bisiesto%100 !==0) || (bisiesto%100==0 
 else{
     console.log("año no bisisesto")
 }
+
+//13. Verifica si una persona es mayor de edad (mayor o igual a 18 años)
+let edad=Number.parseInt(prompt("ingresa tu edad"));
+if(edad>=18){
+    console.log("mayor de edad")
+}
+else{
+    console.log("eres menor de edad")
+}
+//15. Verifica si un número es un cuadrado perfecto.
+let num=Number.parseInt(prompt("ingresa un numero para comprobar si es un cuadrado perfecto"))
+let raiz=Math.sqrt(num);
+if(raiz%1 ==0){
+    console.log("el num es un cuadrado perfecto")
+}
+else{
+    console.log("el num no es un cuadrado perfecto")
+};*/
+
+let numFibonacci=Number.parseInt(prompt("ingrese un numero"))
+
+
+let a=5*numFibonacci*numFibonacci+4;
+let b=5*numFibonacci*numFibonacci-4;
+
