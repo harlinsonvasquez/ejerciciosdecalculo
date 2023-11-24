@@ -111,11 +111,59 @@ if(raiz%1 ==0){
 }
 else{
     console.log("el num no es un cuadrado perfecto")
-};*/
+};
 
 let numFibonacci=Number.parseInt(prompt("ingrese un numero"))
 
 
-let a=5*numFibonacci*numFibonacci+4;
-let b=5*numFibonacci*numFibonacci-4;
+let a=Math.sqrt(5*numFibonacci*numFibonacci+4);
+let b=Math.sqrt(5*numFibonacci*numFibonacci-4);
 
+if(a%1==0 || b%1==0){
+    console.log(`${numFibonacci} es un numero fibonacci`);
+}
+else{
+    console.log("el numero ingresado no es fibonacci");
+}
+//Verifica si un número es una potencia de 2.
+
+let numPotencia=Number.parseInt(prompt("ingresa un numero para saber si es potencia de 2"));
+
+if((numPotencia>0) && ((numPotencia & (numPotencia-1))==0)){
+    console.log("el numero ingresado es potencia de 2");
+}else{
+    console.log("no es potencia")
+}
+//18. Determina si un número es un palíndromo.
+ let numPalin=prompt("ingrese un numero para saber si es palindromo");
+ let numstring=numPalin.toString();
+ let numReverse=numstring.split('').reverse().join('');
+
+ if(numstring===numReverse){
+    console.log(`el num ${numPalin} es palindromo ${numReverse}`)
+ }
+ else{
+    console.log("no es palindromo")
+ }
+
+//19. Verifica si una cadena de texto contiene la palabra "JavaScript".
+let palabra=prompt("ingresa una frase")
+palabra=palabra.toLocaleLowerCase();
+
+if (palabra.includes("javascript")){
+    console.log(" la frase contiene la palabra javascript")     
+}
+else{
+    console.log(" la frase no incluye la palabra javascript")
+}*/
+//20. Determina si una cadena tiene más de 10 caracteres.
+let longitud=prompt("introduce una cadena de texto para comprobar su longitud")
+let numlongitud=longitud.length;
+numlongitud=parseInt(numlongitud);
+
+if(numlongitud>10){
+    console.log("la cadena tiene mas de 10 caracteres incluyendo espacios")
+}
+else{
+    console.log("la cadena de texto tiene menos de 10 caracteres")
+}
